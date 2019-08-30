@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<style type="text/css">
+		.box {
+			width:100px;
+			height:100px;
+			border:1px solid #353535;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var locationHref = location.href
+		var x = locationHref.split("#")
+		var trophyLength = x[1]
+		console.log(x[1])
+		alert(trophyLength)
+		
+		if(x[1]==1){
+			alert("트로피 하나!")
+		}else if(x[1]==2){
+			alert("트로피 둘!")
+		}else if(x[1]==3){
+			alert("트로피 셋!")
+		}else if(x[1]>3){
+			alert("트로피 여러개!")
+		}
+		
+
+	</script>
+</body>
+</html>
